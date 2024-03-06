@@ -1,0 +1,6 @@
+
+hub fiberseq-CIC10A10_YAC
+shortLabel fiberseq-CIC10A10_YAC
+longLabel fiberseq-CIC10A10_YAC
+genomesFile genomes.txt
+email mvollger.edu

@@ -1,0 +1,6 @@
+
+hub fiberseq-YUP8H12_YAC
+shortLabel fiberseq-YUP8H12_YAC
+longLabel fiberseq-YUP8H12_YAC
+genomesFile genomes.txt
+email mvollger.edu
