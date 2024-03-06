@@ -1,0 +1,217 @@
+
+track coverage-CIC10A8_YAC-all
+longLabel CIC10A8_YAC-all coverage
+shortLabel CIC10A8_YAC-all coverage
+container multiWig
+aggregate stacked
+showSubtrackColorOnUi on
+type bigWig 0 1000
+autoScale off
+alwaysZero on
+viewLimits 0:618
+visibility full
+maxHeightPixels 100:100:8
+    
+    track Accessible-CIC10A8_YAC-all
+    parent coverage-CIC10A8_YAC-all
+    bigDataUrl bw/all.fire.coverage.bw
+    type bigWig
+    color 139,0,0
+    
+    track Linker-CIC10A8_YAC-all
+    parent coverage-CIC10A8_YAC-all
+    bigDataUrl bw/all.linker.coverage.bw
+    type bigWig
+    color 147,112,219
+    
+    track Nucleosomes-CIC10A8_YAC-all
+    parent coverage-CIC10A8_YAC-all
+    bigDataUrl bw/all.nucleosome.coverage.bw
+    type bigWig
+    color 169,169,169
+    
+track FIRE.peaks.CIC10A8_YAC
+type bigNarrowPeak
+bigDataUrl bb/FDR-FIRE-peaks.bb
+shortLabel FIRE.peaks.CIC10A8_YAC
+longLabel FIRE.peaks.CIC10A8_YAC
+visibility dense
+maxHeightPixels 50:50:1
+
+track hap.diff.CIC10A8_YAC
+type bigBed 9 +
+itemRgb on
+bigDataUrl bb/hap_differences.bb
+shortLabel hap.diffCIC10A8_YAC
+longLabel hap.diff.CIC10A8_YAC
+visibility pack
+maxHeightPixels 25:25:1
+
+track FDR-wide-peaks-CIC10A8_YAC
+shortLabel FDR-wide-peaks-CIC10A8_YAC
+longLabel FDR-wide-peaks-CIC10A8_YAC
+type bigBed 
+bigDataUrl bb/FDR-wide-peaks.bb
+visibility dense
+maxItems 100000
+
+track percent-accessible-CIC10A8_YAC
+shortLabel CIC10A8_YAC percent-accessible tracks 
+longLabel  CIC10A8_YAC percent-accessible tracks
+container multiWig
+aggregate none 
+showSubtrackColorOnUi on
+type bigWig 0 1000
+alwaysZero on
+viewLimits 0:100
+autoScale off
+maxItems 100000
+visibility full
+maxHeightPixels 100:100:8
+
+    track percent-accessible-CIC10A8_YAC-all
+    parent percent-accessible-CIC10A8_YAC
+    bigDataUrl bw/all.percent.accessible.bw
+    type bigWig
+    visibility hide
+    color 0,0,0
+
+track CIC10A8_YAC-H1-fibers
+shortLabel CIC10A8_YAC-H1-fibers
+longLabel CIC10A8_YAC-H1-fibers
+visibility squish
+type bigBed 12 +
+itemRgb On
+filterText.keywords H1
+bigDataUrl bb/fire-fibers.bb 
+decorator.default.bigDataUrl bb/fire-fiber-decorators.bb 
+decorator.default.filterValues.keywords FIRE,Linker
+
+track CIC10A8_YAC-H2-fibers
+shortLabel CIC10A8_YAC-H2-fibers
+longLabel CIC10A8_YAC-H2-fibers
+visibility squish
+type bigBed 12 +
+itemRgb On
+filterText.keywords H2
+bigDataUrl bb/fire-fibers.bb 
+decorator.default.bigDataUrl bb/fire-fiber-decorators.bb 
+decorator.default.filterValues.keywords FIRE,Linker
+
+track CIC10A8_YAC-UNK-fibers
+shortLabel CIC10A8_YAC-UNK-fibers
+longLabel CIC10A8_YAC-UNK-fibers
+visibility squish
+type bigBed 12 +
+itemRgb On
+filterText.keywords UNK
+bigDataUrl bb/fire-fibers.bb 
+decorator.default.bigDataUrl bb/fire-fiber-decorators.bb 
+decorator.default.filterValues.keywords FIRE,Linker
+
+track coverage-CIC10A8_YAC-hap1
+longLabel CIC10A8_YAC-hap1 coverage
+shortLabel CIC10A8_YAC-hap1 coverage
+container multiWig
+aggregate stacked
+showSubtrackColorOnUi on
+type bigWig 0 1000
+autoScale off
+alwaysZero on
+viewLimits 0:618
+visibility full
+maxHeightPixels 100:100:8
+    
+    track Accessible-CIC10A8_YAC-hap1
+    parent coverage-CIC10A8_YAC-hap1
+    bigDataUrl bw/hap1.fire.coverage.bw
+    type bigWig
+    color 139,0,0
+    
+    track Linker-CIC10A8_YAC-hap1
+    parent coverage-CIC10A8_YAC-hap1
+    bigDataUrl bw/hap1.linker.coverage.bw
+    type bigWig
+    color 147,112,219
+    
+    track Nucleosomes-CIC10A8_YAC-hap1
+    parent coverage-CIC10A8_YAC-hap1
+    bigDataUrl bw/hap1.nucleosome.coverage.bw
+    type bigWig
+    color 169,169,169
+    
+    track percent-accessible-CIC10A8_YAC-hap1
+    parent percent-accessible-CIC10A8_YAC
+    bigDataUrl bw/hap1.percent.accessible.bw
+    type bigWig
+    visibility full
+    color 0,0,255
+
+track coverage-CIC10A8_YAC-hap2
+longLabel CIC10A8_YAC-hap2 coverage
+shortLabel CIC10A8_YAC-hap2 coverage
+container multiWig
+aggregate stacked
+showSubtrackColorOnUi on
+type bigWig 0 1000
+autoScale off
+alwaysZero on
+viewLimits 0:618
+visibility full
+maxHeightPixels 100:100:8
+    
+    track Accessible-CIC10A8_YAC-hap2
+    parent coverage-CIC10A8_YAC-hap2
+    bigDataUrl bw/hap2.fire.coverage.bw
+    type bigWig
+    color 139,0,0
+    
+    track Linker-CIC10A8_YAC-hap2
+    parent coverage-CIC10A8_YAC-hap2
+    bigDataUrl bw/hap2.linker.coverage.bw
+    type bigWig
+    color 147,112,219
+    
+    track Nucleosomes-CIC10A8_YAC-hap2
+    parent coverage-CIC10A8_YAC-hap2
+    bigDataUrl bw/hap2.nucleosome.coverage.bw
+    type bigWig
+    color 169,169,169
+    
+    track percent-accessible-CIC10A8_YAC-hap2
+    parent percent-accessible-CIC10A8_YAC
+    bigDataUrl bw/hap2.percent.accessible.bw
+    type bigWig
+    visibility full
+    color 255,0,0
+
+track FIRE_FDR
+compositeTrack on
+shortLabel FIRE FDR
+longLabel FIRE scores and FDR values
+type bigWig
+maxItems 100000
+maxHeightPixels 100:100:1
+alwaysZero on
+
+    track log_fdr
+    parent FIRE_FDR
+    bigDataUrl bw/log_FDR.bw
+    shortLabel -10log10 FDR
+    longLabel -10log10 FDR
+    autoScale on
+    visibility full
+    yLineOnOff on
+    yLineMark 13.010299956639813
+    gridDefault on
+    
+    track fire_score
+    parent FIRE_FDR
+    bigDataUrl bw/score.bw
+    shortLabel FIRE score
+    longLabel FIRE score
+    visibility full
+    alwaysZero on
+    viewLimits 0:100
+    viewLimits 0.0:100.0
+    windowingFunction maximum
