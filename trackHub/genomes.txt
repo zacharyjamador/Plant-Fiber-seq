@@ -1,3 +1,0 @@
-
-genome GCF_000001735.4
-trackDb trackDb.txt
